@@ -1,7 +1,7 @@
 FROM project42/s6-alpine
 
 RUN apk add --no-cache nginx && \
-mkdir /tmp/nginx
+mkdir /run/nginx
 
 COPY container-files /
 
