@@ -1,7 +1,7 @@
-FROM project42/s6-alpine
+FROM project42/s6-alpine:3.14
+MAINTAINER Jordan Clark mail@jordanclark.us
 
-RUN apk add --no-cache nginx && \
-mkdir /run/nginx
+RUN apk add --no-cache nginx
 
 COPY container-files /
 
